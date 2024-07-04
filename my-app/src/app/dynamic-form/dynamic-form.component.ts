@@ -10,6 +10,10 @@ import {MatFormFieldModule} from "@angular/material/form-field";
   templateUrl: './dynamic-form.component.html',
   styleUrl: './dynamic-form.component.css'
 })
-export class DynamicFormComponent {
 
+
+export class DynamicFormComponent {
+  name: string = "Mugdho";
+  placeholder:string = "Ex. Mahmud";
+  label: string = "Full Name"
 }
