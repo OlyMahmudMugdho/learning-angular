@@ -1,6 +1,20 @@
 <form class="example-form">
-  <mat-form-field class="example-full-width">
-    <mat-label>{{label}}</mat-label>
-    <input matInput placeholder="{{placeholder}}" value="{{name}}">
+
+  <mat-form-field>
+    <mat-label>Name</mat-label>
+    <input matInput placeholder="{{placeholder.name}}" >
   </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Email</mat-label>
+    <input matInput placeholder="{{placeholder.email}}" >
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width">
+    <mat-label>Age</mat-label>
+    <input matInput placeholder="{{placeholder.age}}" >
+  </mat-form-field>
+
+  <button mat-flat-button>Basic</button>
+
 </form>
