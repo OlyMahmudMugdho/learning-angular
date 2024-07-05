@@ -2,7 +2,7 @@
 
 html, body {
   height: 100vh;
-  background-color: black;
+  background-color: #2b2a2a;
   display: flex;
   flex-direction: column;
   justify-content: center;
