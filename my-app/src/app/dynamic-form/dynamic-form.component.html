@@ -1,20 +1,29 @@
 <form class="example-form">
 
+
+
   <mat-form-field>
     <mat-label>Name</mat-label>
-    <input matInput placeholder="{{placeholder.name}}" >
+    <input type="text" matInput placeholder="{{placeholder.name}}" [(ngModel)]="name" name="name" >
   </mat-form-field>
 
   <mat-form-field>
     <mat-label>Email</mat-label>
-    <input matInput placeholder="{{placeholder.email}}" >
+    <input type="name" matInput placeholder="{{placeholder.email}}" [(ngModel)]="email" name="email" >
   </mat-form-field>
 
   <mat-form-field class="example-full-width">
     <mat-label>Age</mat-label>
-    <input matInput placeholder="{{placeholder.age}}" >
+    <input type="number" matInput placeholder="{{placeholder.age}}" [(ngModel)]="age" name="age" >
   </mat-form-field>
 
-  <button mat-flat-button>Basic</button>
+  <button mat-flat-button>Submit</button>
+
+  <div class="output">
+    <h4>Name : {{ name }} </h4>
+    <h4>E-mail: {{ email }}</h4>
+    <h4>Age: {{ age }} </h4>
+  </div>
 
 </form>
+

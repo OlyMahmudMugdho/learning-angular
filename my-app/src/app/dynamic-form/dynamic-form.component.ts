@@ -16,8 +16,12 @@ import {MatButton} from "@angular/material/button";
 
 export class DynamicFormComponent {
   placeholder: FormModel = {
-    name: "your name",
+    name: 'your name',
     email : "email@example.com",
     age: 23
   }
+
+  name: string = "";
+  email: string = "";
+  age?: number;
 }
