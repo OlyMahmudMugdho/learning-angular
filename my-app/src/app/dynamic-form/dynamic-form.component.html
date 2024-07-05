@@ -20,9 +20,9 @@
   <button mat-flat-button>Submit</button>
 
   <div class="output">
-    <h4>Name : {{ name }} </h4>
-    <h4>E-mail: {{ email }}</h4>
-    <h4>Age: {{ age }} </h4>
+    <h4 *ngIf="name">Name : {{ name }} </h4>
+    <h4 *ngIf="email">E-mail: {{ email }}</h4>
+    <h4 *ngIf="age">Age: {{ age }} </h4>
   </div>
 
 </form>

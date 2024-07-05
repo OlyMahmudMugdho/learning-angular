@@ -4,11 +4,12 @@ import {FormsModule} from "@angular/forms";
 import {MatFormFieldModule} from "@angular/material/form-field";
 import {FormModel} from "../models/form.model";
 import {MatButton} from "@angular/material/button";
+import {NgIf} from "@angular/common";
 
 @Component({
   selector: 'app-dynamic-form',
   standalone: true,
-  imports: [FormsModule, MatFormFieldModule, MatInputModule, MatButton],
+  imports: [FormsModule, MatFormFieldModule, MatInputModule, MatButton, NgIf],
   templateUrl: './dynamic-form.component.html',
   styleUrl: './dynamic-form.component.css'
 })
@@ -21,7 +22,7 @@ export class DynamicFormComponent {
     age: 23
   }
 
-  name: string = "";
-  email: string = "";
+  name?: string;
+  email?: string;
   age?: number;
 }
